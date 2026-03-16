@@ -5,21 +5,21 @@
 class RaidPreview < Formula
   desc "Distributed development environment orchestration tool (preview build)"
   homepage "https://github.com/8bitalex/raid"
-  version "0.2.5-beta"
+  version "0.2.6-beta"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/8bitAlex/raid/releases/download/v0.2.5-beta/raid_0.2.5-beta_darwin_amd64.tar.gz"
-      sha256 "93361e688ac76cc919cb7f4ae8d7a2dc96a36843f8d87e50bd7a5cda2c7cb2d3"
+      url "https://github.com/8bitAlex/raid/releases/download/v0.2.6-beta/raid_0.2.6-beta_darwin_amd64.tar.gz"
+      sha256 "6e05e797a5e219e42fcf08048969db797148894bfd91458074173c60038fdcef"
 
       define_method(:install) do
         bin.install "raid"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/8bitAlex/raid/releases/download/v0.2.5-beta/raid_0.2.5-beta_darwin_arm64.tar.gz"
-      sha256 "1a2c75eb44d9dbde53e324d6df671c05ddafeaa57c498d367a6acfbfb9f6b1e6"
+      url "https://github.com/8bitAlex/raid/releases/download/v0.2.6-beta/raid_0.2.6-beta_darwin_arm64.tar.gz"
+      sha256 "8c9c8389b2ad3c468ca16db386089ceddf8ab7f34b0e08f8c154c4773567bc76"
 
       define_method(:install) do
         bin.install "raid"
@@ -29,15 +29,15 @@ class RaidPreview < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/8bitAlex/raid/releases/download/v0.2.5-beta/raid_0.2.5-beta_linux_amd64.tar.gz"
-      sha256 "8a076c1fc634e33381d0514db6b68ea6566a47b6e404b586cc02167a8bf08078"
+      url "https://github.com/8bitAlex/raid/releases/download/v0.2.6-beta/raid_0.2.6-beta_linux_amd64.tar.gz"
+      sha256 "0e2277eed4adde278f35227ca7bbd40410891c8687741d9bd592f95bff1c8735"
       define_method(:install) do
         bin.install "raid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/8bitAlex/raid/releases/download/v0.2.5-beta/raid_0.2.5-beta_linux_arm64.tar.gz"
-      sha256 "96567a1706b1d211f4e159fc9b5b055a242c2a8e838a4c364f20c70fe1cf14ec"
+      url "https://github.com/8bitAlex/raid/releases/download/v0.2.6-beta/raid_0.2.6-beta_linux_arm64.tar.gz"
+      sha256 "27e679792e108f0522d31da9b6eb299f2a3055a85c91afa2880ac1934e0c931c"
       define_method(:install) do
         bin.install "raid"
       end
